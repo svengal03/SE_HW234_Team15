@@ -1,5 +1,5 @@
 import pytest
-from code.__init__ import inc
+from code import inc
 
 def test_answer():
     assert inc(3) == 4
