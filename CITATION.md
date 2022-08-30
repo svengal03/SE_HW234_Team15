@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7033264.svg)](https://doi.org/10.5281/zenodo.7033264).  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7033264.svg)](https://doi.org/10.5281/zenodo.7033264)    
 Version: 1.0.0
 Authors:
   - Nelluru, Dedeepya
