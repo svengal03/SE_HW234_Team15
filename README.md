@@ -24,6 +24,8 @@ This project requires python setup
 ## Structure ##
 
 ```txt
+.github/workflows/
+   python-app.yml
 .gitignore
 .travis.yml
 CITATION.md 
