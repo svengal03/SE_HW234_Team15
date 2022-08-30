@@ -1,5 +1,11 @@
 import pytest
-from code import inc
+from code import square
 
-def test_answer():
-    assert inc(3) == 4
+def test_zero():
+    assert square(0) == 0
+    
+def test_two()
+    assert square(2) == 4
+
+def test_three():
+    assert square(3) == 9
