@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7033264.svg)](https://doi.org/10.5281/zenodo.7033264)
-
+![License](https://github.com//irkingmaker/se_project/actions/workflows/python-app.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-v3.8+-yellow.svg)
 ![Lines of code](https://img.shields.io/tokei/lines/github/irkingmaker/se_project)
 ![GitHub issues](https://img.shields.io/github/issues/irkingmaker/se_project)
