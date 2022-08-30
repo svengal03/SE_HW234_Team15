@@ -1,4 +1,50 @@
-# se_project
-Software Engineering Project Repo
+# Software Engineering - Homework Repo
 
-[![DOI](https://zenodo.org/badge/528993817.svg)](https://zenodo.org/badge/latestdoi/528993817)
+# NCSU CSC-510 Software Engineering Project GROUP-15 #
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7033264.svg)](https://doi.org/10.5281/zenodo.7033264)
+
+![Python](https://img.shields.io/badge/python-v3.8+-yellow.svg)
+![Lines of code](https://img.shields.io/tokei/lines/github/irkingmaker/se_project)
+![GitHub issues](https://img.shields.io/github/issues/irkingmaker/se_project)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/irkingmaker/se_project)
+
+
+## General Info ##
+Homework 1: This project focuses on creating a good Github repository with simple python functions
+
+## Technologies ##
+Python 3.8.0
+
+#### Prerequisites ####
+This project requires python setup
+
+## Structure ##
+
+```txt
+.gitignore
+.travis.yml
+CITATION.md 
+CODE-OF-CONDUCT.md
+CONTRIBUTING.md
+INSTALL.md
+LICENSE.md
+README.md
+setup.py         
+requirements.txt 
+data/
+  README.md
+test/
+  test.py
+  README.md
+code/
+  __init__.py 
+```
+
+## Group Members ##
+  - [Nelluru, Dedeepya](mailto:dnellur@ncsu.edu?) (dnellur)
+  - [Kanamarlapudi, Venkata Gnana Vardhani](mailto:vkanama@ncsu.edu?) (vkanama)
+  - [Vengali, Sai Kumar Goud](mailto:svengal@ncsu.edu?) (svengal)
+  - [Immidisetti, Ratan](mailto:rimmidi@ncsu.edu?) (rimmidi)
+  - [Chirumamilla, Raviteja](mailto:rchirum@ncsu.edu?) (rchirum)
