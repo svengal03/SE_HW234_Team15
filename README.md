@@ -1,6 +1,6 @@
-# Software Engineering - Homework Repo
+# Software Engineering - Homework-2 Repo
 
-# NCSU CSC-510 Software Engineering Project GROUP-15 #
+# NCSU CSC-510 Software Engineering Homework GROUP-15 #
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7033264.svg)](https://doi.org/10.5281/zenodo.7033264)
@@ -13,13 +13,14 @@
 
 
 ## General Info ##
-Homework 1: This project focuses on creating a good Github repository with simple python functions
+Homework 2: csv-summarizer.  
+Python code for Lua code.
 
 ## Technologies ##
 Python 3.8.0
 
 #### Prerequisites ####
-This project requires python setup
+This Homework requires python setup
 
 ## Structure ##
 
