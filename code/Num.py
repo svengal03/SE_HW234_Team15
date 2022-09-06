@@ -1,4 +1,4 @@
-from Utils import *
+from code import Utils
 import math
 import random
 
@@ -23,7 +23,7 @@ class Num:
     
     def div(self,a):
         a = self.nums()
-        return (per(a,0.9) - per(a,0.1)) / 2.58
+        return (Utils.per(a,0.9) - Utils.per(a,0.1)) / 2.58
 
     def mid(self):
         return per(self.nums(),0.5)
