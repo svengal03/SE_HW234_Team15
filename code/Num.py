@@ -1,7 +1,6 @@
 import math
 import random
-from Utils import *
-import Utils
+from code import Utils
 
 class Num:
     def __init__(self, c=0, s=""):
@@ -32,8 +31,8 @@ class Num:
 
     def div(self):
         a = self.nums()
-        return (per(a, 0.9) - per(a, 0.1)) / 2.58
+        return (Utils.per(a, 0.9) - Utils.per(a, 0.1)) / 2.58
 
     def mid(self):
         print(self.nums())
-        return per(self.nums(), 0.5)
+        return Utils.per(self.nums(), 0.5)
