@@ -26,5 +26,5 @@ class Num:
         return (Utils.per(a,0.9) - Utils.per(a,0.1)) / 2.58
 
     def mid(self):
-        return per(self.nums(),0.5)
+        return Utils.per(self.nums(),0.5)
 
