@@ -12,7 +12,7 @@ def test_the():
     return True
 
 def test_sym():
-    sym = Sum.Sym()
+    sym = Sym.Sym()
     for x in ["a", "a", "a", "a", "b", "b", "c"]:
         sym.add(x)
     mode, entropy = sym.mid(), sym.div()
