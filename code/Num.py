@@ -1,3 +1,7 @@
+from helpers import per, the 
+import math
+import random
+
 class Num:
     def __init__(self, c, s):
         self.n = 0                  # items seen
