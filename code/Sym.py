@@ -1,10 +1,11 @@
 import math
 class Sym:
-    def __int__(self,c_name,c_position):
+    def __int__(self,c_name = "" ,c_position = 0):
         self.n = 0 #characters seen
-        self.at = c_position or 0 # position of column
-        self.name = c_name or ""  # name of a column
+        self.at = c_position # position of column
+        self.name = c_name  # name of a column
         self._has = dict() # dictionary to contain freq of a symbol
+        
     def add(self,k):
         if k != '?':
             self.n +=1
