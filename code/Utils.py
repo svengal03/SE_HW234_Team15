@@ -17,9 +17,9 @@ OPTIONS:
     -S  --Seperator feild separator                         = ,
 """
 
-def per(t,p):
-    p = math.floor(((p or .5) * len(t)) + .5)
-    return t[int(max(1, min(len(t), p)))]
+def per(t, p = 0.5):
+    p = math.floor((p * len(t)) + 0.5)
+    return t[max(1, min(len(t), p))]
 
 def oo(t):
     print(str(t))
