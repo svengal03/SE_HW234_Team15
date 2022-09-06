@@ -4,6 +4,18 @@ import sys
 import random
 
 help = """
+CSV :   summarized csv file
+(c) 2022 Tim Menzies<timm@ieee.org> BSD-2 license
+USAGE: lua seen.lua (OPTIONS]
+OPTIONS:
+    -e  --eg        start-up example                        = None
+    -d  --dump      on test failure, exit with stack dump   = false
+    -f  --file      file with txt data                      = ../data/data.txt
+    -h  --help      show help                               = false
+    -n  --nums      number of nums to keep                  = 512
+    -s  --seed      random seed                             = 10019
+    -S  --Seperator feild separator                         = ,
+"""
 
 def per(t,p):
     p = math.floor(((p or .5) * len(t)) + .5)
