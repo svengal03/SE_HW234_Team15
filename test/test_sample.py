@@ -42,7 +42,7 @@ def test_bignum():
 def ALL():
     tests = dir(test_sample)
     tests = list(filter(lambda x: x[0:4] == "test", tests))
-    tests.remove("test_lua2py")
+    tests.remove("test_sample")
 
     status = True
     for t in tests:
@@ -56,7 +56,7 @@ def ALL():
 def run_tests(k):
     tests = dir(test_sample)
     tests = list(filter(lambda x: x[0:4] == "test", tests))
-    tests.remove("test_lua2py")
+    tests.remove("test_sample")
 
     if k not in tests and k != "ALL":
         return
