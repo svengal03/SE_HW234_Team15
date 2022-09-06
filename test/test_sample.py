@@ -8,7 +8,7 @@ import random
 from test import test_sample
 
 def test_the():
-    Utils.oo(the)
+    Utils.oo(Utils.the)
     return True
 
 def test_sym():
@@ -32,10 +32,10 @@ def test_num():
 
 def test_bignum():
     num = Num()
-    the['nums'] = 32
+    Utils.the['nums'] = 32
     for i in range(1, 1000):
         num.add(i)
-    oo(num.nums())
+    Utils.oo(num.nums())
     return 32 == len(num._has)
 
 
@@ -64,10 +64,10 @@ def run_tests(k):
     random.seed(0)
 
     old = {}
-    for u, v in the.items():
+    for u, v in Utils.the.items():
         old[u] = v
 
-    if the['dump'] == True:
+    if Utils.the['dump'] == True:
         fun = getattr(test_sample, k)
         status = fun()
         print("!!!!!!", Utils.msg(status), k, status)
@@ -81,4 +81,4 @@ def run_tests(k):
             print("!!!!!!", Utils.msg(status), k, status)
 
     for u, v in old.items():
-        the[u] = v
+        Utils.the[u] = v
