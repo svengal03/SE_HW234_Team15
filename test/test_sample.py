@@ -5,14 +5,10 @@ from code import Utils
 import re
 import sys
 import random
-from test import test_lua
-from Utils import *
-from Num import *
-from Sym import *
 from test import test_sample
 
 def test_the():
-    oo(the)
+    Utils.oo(the)
     return True
 
 def test_sym():
@@ -21,7 +17,7 @@ def test_sym():
         sym.add(x)
     mode, entropy = sym.mid(), sym.div()
     entropy = (1000 * entropy) // 1 / 1000
-    oo({"mid": mode, "div": entropy})
+    Utils.oo({"mid": mode, "div": entropy})
     return mode == "a" and 1.37 <= entropy and entropy <= 1.38
 
 
@@ -74,15 +70,15 @@ def run_tests(k):
     if the['dump'] == True:
         fun = getattr(test_sample, k)
         status = fun()
-        print("!!!!!!", msg(status), k, status)
+        print("!!!!!!", Utils.msg(status), k, status)
     else:
         try:
             fun = getattr(test_sample, k)
             status = fun()
-            print("!!!!!!", msg(status), k, status)
+            print("!!!!!!", Utils.msg(status), k, status)
         except:
             status = False
-            print("!!!!!!", msg(status), k, status)
+            print("!!!!!!", Utils.msg(status), k, status)
 
     for u, v in old.items():
         the[u] = v
