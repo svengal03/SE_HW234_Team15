@@ -1,4 +1,7 @@
 import math
+import re
+import sys
+import random
 
 def per(t,p):
     p = math.floor(((p or .5) * len(t)) + .5)
@@ -19,7 +22,6 @@ def coerce(s):
             return False
         return s1
     return int(s) if s.isnumeric() else None or fun(s)
-
 
 def create_the():
     the = {}
