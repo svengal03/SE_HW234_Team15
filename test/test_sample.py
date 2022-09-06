@@ -12,7 +12,7 @@ def test_the():
     return True
 
 def test_sym():
-    sym = Sym()
+    sym = Sum.Sym()
     for x in ["a", "a", "a", "a", "b", "b", "c"]:
         sym.add(x)
     mode, entropy = sym.mid(), sym.div()
@@ -22,7 +22,7 @@ def test_sym():
 
 
 def test_num():
-    num = Num()
+    num = Num.Num()
     for i in range(1, 100):
         num.add(i)
     mid, div = num.mid(), num.div()
@@ -31,7 +31,7 @@ def test_num():
 
 
 def test_bignum():
-    num = Num()
+    num = Num.Num()
     Utils.the['nums'] = 32
     for i in range(1, 1000):
         num.add(i)
