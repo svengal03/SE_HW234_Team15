@@ -17,6 +17,7 @@ class Num:
         return self._has
 
     def add(self, v):
+        pos= None
         if v != "?":
             self.n += 1
             self.lo = min(self.lo, v)
