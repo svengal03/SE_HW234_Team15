@@ -3,10 +3,10 @@ import math
 import random
 
 class Num:
-    def __init__(self, c, s):
+    def __init__(self, c = 0 , s = "" ):
         self.n = 0                  # items seen
-        self.at = c if c else 0     # column  position
-        self.name = s or ""         # column name
+        self.at = c      # column  position
+        self.name = s         # column name
         self._has = []          # kept data
         self.lo = float('inf')           # lowest seen
         self.hi = -float('inf')          # highest seen
