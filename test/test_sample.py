@@ -6,6 +6,10 @@ import re
 import sys
 import random
 from test import test_lua
+from helpers import *
+from num import *
+from sym import *
+from test import test_sample
 
 def test_the():
     oo(the)
