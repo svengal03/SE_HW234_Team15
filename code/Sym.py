@@ -1,15 +1,11 @@
 import math
 
-
-class Sym:
-    def __int__(self, c_name="", c_position=0):
+class Sym():
+    def __init__(self, c_name="", c_position=0):
         self.n = 0
-        # characters seen
         self.at = c_position
-        # position of column
         self.name = c_name
-        # name of a column
-        self._has = dict()  # dictionary to contain freq of a symbol
+        self._has = dict()
 
     def add(self, k):
         if k != "?":
@@ -30,3 +26,9 @@ class Sym:
             if v > 0:
                 e = e - func(v / self.n)
         return e
+
+
+if __name__ == '__main__':
+    sym = Sym()
+    for x in ["a", "a", "a", "a", "b", "b", "c"]:
+        sym.add(x)
