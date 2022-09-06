@@ -22,6 +22,11 @@ Python 3.8.0
 #### Prerequisites ####
 This Homework requires python setup
 
+Summary:
+1. The project currently works for the 'Num' and 'Sym' classes
+2. The init point currently prints out only a sample help string.
+3. The test cases 'the', 'num', 'sym' and 'bignum' are currently hooked up to the CI.
+
 ## Structure ##
 
 ```txt
