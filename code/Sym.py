@@ -1,5 +1,6 @@
 import math
 
+
 class Sym():
     def __init__(self, c_name="", c_position=0):
         self.n = 0
