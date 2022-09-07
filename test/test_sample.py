@@ -7,6 +7,7 @@ import sys
 import random
 from test import test_sample
 
+
 def test_the():
     Utils.oo(Utils.the)
     return True
