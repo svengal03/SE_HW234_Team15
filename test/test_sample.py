@@ -10,7 +10,7 @@ from test import test_sample
 
 def test_the():
     Utils.oo(Utils.the)
-    return True
+    assert 1 == 1
 
 def test_sym():
     sym = Sym.Sym()
