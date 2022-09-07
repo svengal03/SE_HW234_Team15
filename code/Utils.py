@@ -3,6 +3,7 @@ import re
 import sys
 import random
 
+
 help = """
 CSV :   summarized csv file
 (c) 2022 Tim Menzies<timm@ieee.org> BSD-2 license
