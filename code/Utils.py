@@ -47,3 +47,11 @@ def create_the():
     return the
 
 the = create_the()
+
+def copy(t):
+    if type(t) != dict:
+        return t
+    u = {}
+    for k, v in t.items():
+        u[k] = copy(v)
+    return u
