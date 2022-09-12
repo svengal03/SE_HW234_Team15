@@ -30,13 +30,28 @@ def msg(status):
     return "PASS" if status else "FAIL"
 
 def coerce(s):
-    def fun(s1):
-        if s1 == "true":
-            return True
-        if s1 == "false":
-            return False
-        return s1
-    return int(s) if s.isnumeric() else None or fun(s)
+    s = s.strip()
+    if s.isnumeric():
+        return int(s)
+    else:
+        try:
+            return float(s)
+        except ValueError:
+            if s == 'true' or s == 'TRUE' or s == 'True':
+                return True
+            elif s == 'false' or s == 'FALSE' or s == 'False':
+                return False
+            return re.match("\s*(.*)\s*", s).string
+
+def parse_csv(src, func, separator):
+    lines = src.split('\n')
+    for line in lines:
+        temp = []
+        for ele in line.split(sep):
+            ele = coerce(ele)
+            temp.append(ele)
+            func(t)
+        
 
 def create_the():
     the = {}
