@@ -1,4 +1,4 @@
-# Software Engineering - Homework-2 Repo
+# Software Engineering - Homework - 2,3,4 Repo
 
 # NCSU CSC-510 Software Engineering Homework GROUP-15 #
 
@@ -13,7 +13,7 @@
 
 
 ## General Info ##
-Homework 2: csv-summarizer.  
+Homework : 2,3,4  
 Python code for Lua code.
 
 ## Technologies ##
