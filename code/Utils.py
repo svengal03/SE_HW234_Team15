@@ -47,10 +47,10 @@ def parse_csv(src, func, separator):
     lines = src.split('\n')
     for line in lines:
         temp = []
-        for ele in line.split(sep):
+        for ele in line.split(separator):
             ele = coerce(ele)
             temp.append(ele)
-            func(t)
+            #func(t)
         
 
 def create_the():
