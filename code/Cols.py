@@ -7,15 +7,15 @@ from code import Num
 
 class Cols:
     def __init__(self, names):
-        self.names=names  #all column names
-        self.all=[]       #all the columns (including the skipped ones)
-        self.klass=None   #the single dependent klass column (if it exists)
-        self.x=[]         #independent columns (that are not skipped)
-        self.y=[]         #depedent columns (that are not skipped)
+        self.names=names  # all column names
+        self.all=[]       # all the columns (including the skipped ones)
+        self.klass=None   # the single dependent klass column (if it exists)
+        self.x=[]         # independent columns (that are not skipped)
+        self.y=[]         # depedent columns (that are not skipped)
         
         for c in range(0, len(names)):
             s = names[c] 
-            #Numerics start with Uppercase. 
+            # Numerics start with Uppercase. 
             if re.search("[A-Z]+", s):
                 self.all.append(Num.num(c, s))
             else:
