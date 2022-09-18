@@ -1,8 +1,8 @@
 import pytest
-from code.Num import 
-from code.Sym import Sym
-from code.Utils import Utils
-from code.Data import Data
+from Num import 
+from Sym import Sym
+from Utils import Utils
+from Data import Data
 # from Utils import oo,parse_csv
 import re
 import sys
