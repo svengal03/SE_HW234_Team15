@@ -1,7 +1,9 @@
 import pytest
-from code import Num
-from code import Sym
-from code import Utils
+from code.Num import 
+from code.Sym import Sym
+from code.Utils import Utils
+from code.Data import Data
+# from Utils import oo,parse_csv
 import re
 import sys
 import random
@@ -39,6 +41,29 @@ def test_bignum():
     Utils.oo(num.nums())
     return 32 == len(num._has)
 
+
+def test_data():
+    d = ("../data/auto93.csv")
+    for _,y in d.cols.y:
+        Utils.oo(y)
+    return True
+
+def test_stats():
+    data = Data("../data/auto93.csv")
+    print('xmid=', data.stats(2, data.cols.x, "mid"))
+    print('xdiv=', data.stats(3, data.cols.x, "div"))
+    print('ymid=', data.stats(2, data.cols.y, "mid"))
+    print('ymid=', data.stats(3, data.cols.y, "div"))
+    return True
+
+def test_csv():
+    global n 
+    n=0
+    def function_row(r):
+        n+=1
+        return n if n>10 else Utils.oo(r)
+    csv("../data/auto93.csv", function_row)
+    return True
 
 def ALL():
     tests = dir(test_sample)
