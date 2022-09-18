@@ -31,6 +31,21 @@ Summary:
 ```txt
 .github/workflows/
    python-app.yml
+code/
+  README.md
+  Code.py
+  Data.py
+  Num.py
+  Row.py
+  Sym.py
+  Utils.py
+  __init__.py
+data/
+  __init__.py 
+test/
+  README.md
+  __init__.py
+  test_sample.py
 .gitignore
 .travis.yml
 CITATION.md 
@@ -39,15 +54,8 @@ CONTRIBUTING.md
 INSTALL.md
 LICENSE.md
 README.md
+requirements.txt
 setup.py         
-requirements.txt 
-data/
-  README.md
-test/
-  test.py
-  README.md
-code/
-  __init__.py 
 ```
 
 ## Group Members ##
