@@ -35,10 +35,10 @@ class Data:
         
         t= {}
         for col in show_cols:
-            if fun == 'mid':
+            if todo == 'mid':
                 temp = col.mid()
             else:
-                temp = fun(col)
+                temp = col.div()
             if isinstance(temp, float):
                 temp = round(temp, places)
             t[col.name] = temp
