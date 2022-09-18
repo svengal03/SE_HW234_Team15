@@ -20,11 +20,7 @@ Python code for Lua code.
 Python 3.8.0
 
 #### Prerequisites ####
-This Homework requires python setup
-
-Summary:
-1. The project currently works for the 'Num' and 'Sym' classes
-2. The test cases 'the', 'num', 'sym' and 'bignum' are currently working. 
+This Homework requires python setup. 
 
 ## Structure ##
 
