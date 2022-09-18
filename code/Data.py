@@ -1,6 +1,6 @@
-from cols import Cols
-from row import Row
-from utils import parse_csv
+from Cols import Cols
+from Row import Row
+from Utils import parse_csv
 
 class Data:
     def __init__(self, src, nums, separator):
@@ -29,8 +29,10 @@ class Data:
                 for col in todo:
                     col.add(row.cells[col.at], self.n)
 
-    def stats(self, places=2, show_cols="data.cols.x", fun = 'mid'):
+    def stats(self, places, show_cols="data.cols.x", todo):
         show_cols = show_cols or self.cols.y
+        todo = todo or "mid"
+        
         t= {}
         for col in show_cols:
             if fun == 'mid':
