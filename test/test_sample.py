@@ -1,5 +1,5 @@
 import pytest
-from Num import 
+from Num import Num
 from Sym import Sym
 from Utils import Utils
 from Data import Data
