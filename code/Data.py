@@ -29,7 +29,7 @@ class Data:
                 for col in todo:
                     col.add(row.cells[col.at], self.n)
 
-    def stats(self, places, show_cols="data.cols.x", todo):
+    def stats(self, places, show_cols, todo):
         show_cols = show_cols or self.cols.y
         todo = todo or "mid"
         
