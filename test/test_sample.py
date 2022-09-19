@@ -44,16 +44,22 @@ def test_bignum():
 
 def test_data():
     d = Data.Data("../data/data.csv")
-    for _,y in d.cols.y:
+    for y in d.cols.y:
         Utils.oo(y)
     return True
 
 def test_stats():
     data = Data.Data("../data/data.csv")
-    print('xmid=', data.stats(2, data.cols.x, "mid"))
-    print('xdiv=', data.stats(3, data.cols.x, "div"))
-    print('ymid=', data.stats(2, data.cols.y, "mid"))
-    print('ymid=', data.stats(3, data.cols.y, "div"))
+    def div(col):
+        return col.div()
+    
+    def mid(col):
+        return col.mid()
+        
+    print('xmid=', Utils.o(data.stats(2, data.cols.x, mid)))
+    print('xdiv=', Utils.o(data.stats(3, data.cols.x, "div")))
+    print('ymid=', Utils.o(data.stats(2, data.cols.y, "mid")))
+    print('ymid=', Utils.o(data.stats(3, data.cols.y, "div")))
     return True
 
 def test_csv():
