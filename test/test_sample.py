@@ -70,7 +70,7 @@ def test_csv():
         global n 
         n+=1
         return n if n>10 else Utils.oo(r)
-    Utils.csv("./data/data.csv", function_row)
+    Utils.parse_csv("./data/data.csv", function_row)
     return True
 
 def ALL():
