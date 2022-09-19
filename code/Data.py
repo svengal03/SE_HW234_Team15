@@ -7,7 +7,7 @@ from code import Row
 from code import Utils
 
 class Data:
-    def __init__(self, src, nums, separator):
+    def __init__(self, src, nums=None, separator=None):
         self.cols = None
         self.rows = []
         self.n = nums
@@ -33,7 +33,7 @@ class Data:
                 for col in todo:
                     col.add(row.cells[col.at], self.n)
 
-    def stats(self, places, show_cols, todo):
+    def stats(self, places, show_cols=None, todo=None):
         show_cols = show_cols or self.cols.y
         todo = todo or "mid"
         
