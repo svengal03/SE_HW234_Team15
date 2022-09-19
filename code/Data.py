@@ -15,7 +15,7 @@ class Data:
             nonlocal self
             self.add(row)
         if isinstance(src, str):
-            Utils.parse_csv(src, func, separator)
+            Utils.parse_csv(src)
         else:
             for row in (src or []):
                 self.add(row)
