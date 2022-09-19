@@ -69,12 +69,11 @@ def coerce(s):
 
 def parse_csv(src, func=None, separator=','):
     lines = src.split('\n')
-    for line in lines:
-        temp = []
-        for ele in line.split(separator):
-            ele = coerce(ele)
-            temp.append(ele)
-            #func(t)
+    with open(fname, "r") as src:
+        lines_csv = src.readlines()
+        for line in lines_csv:
+            row = line.split(sep)
+            fun(row)
         
 
 def create_the():
@@ -86,13 +85,6 @@ def create_the():
     return the
 
 the = create_the()
-
-def csv(fname, fun, sep=','):
-    with open(fname, "r") as src:
-        lines_csv = src.readlines()
-        for line in lines_csv:
-            row = line.split(sep)
-            fun(row)
             
 def copy(t):
     if type(t) != dict:
