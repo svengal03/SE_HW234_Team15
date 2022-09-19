@@ -20,7 +20,7 @@ class Data:
             for row in (src or []):
                 self.add(row)
     
-    def add(self, xs):
+    def add(self, xs: Row):
         if not self.cols:
             self.cols = Cols.Cols(xs)
         else:
@@ -30,7 +30,7 @@ class Data:
                 for col in todo:
                     col.add(row.cells[col.at], self.n)
 
-    def stats(self, places, show_cols=None, todo=None):
+    def stats(self, places=2, show_cols=None, todo=None):
         show_cols = show_cols or self.cols.y
         todo = todo or self.cols.mid
         
