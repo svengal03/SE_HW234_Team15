@@ -14,20 +14,20 @@ class Cols:
         self.y=[]         # depedent columns (that are not skipped)
         
         for c in range(0, len(names)):
-            s = names[c] 
+            s =  re.sub('\n', '' , names[c]) 
             # Numerics start with Uppercase. 
-            if re.search("[A-Z]+", s):
-                self.all.append(Num.num(c, s))
+            if re.search(r'^[A-Z]*', s):
+                self.all.append(Num.Num(c, s))
             else:
-                self.all.append(Sym.sym(c, s))
+                self.all.append(Sym.Sym(c, s))
             col = self.all
             
             # some cols are goal cols
-            if s.find(":") == -1:
-                if s[-1] == '+' or s[-1] == '-':
+            if not s.endswith(':'):
+                if  re.search(r'[+!-]', s):
                     self.y.append(col) 
                 else:
                     self.x.append(col)
                 
-                if s[-1] == '$':
+                if '!$' in s:
                     self.klass = col
