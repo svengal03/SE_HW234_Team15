@@ -24,25 +24,23 @@ class Data:
         if not self.cols:
             self.cols = Cols.Cols(xs)
         else:
-            if hasattr(xs,'cells'):
-                self.rows.append(xs)
-            else:
-                self.rows.append(Row.Row(xs))
-            row = self.rows[-1]
+            row = xs if type(xs) == Row else Row.Row(xs)
+            self.rows.append(row)
             for todo in (self.cols.x, self.cols.y):
                 for col in todo:
                     col.add(row.cells[col.at], self.n)
 
     def stats(self, places, show_cols=None, todo=None):
         show_cols = show_cols or self.cols.y
-        todo = todo or "mid"
+        todo = todo or self.cols.mid
         
         t= {}
         for col in show_cols:
-            if todo == 'mid':
+            '''if todo == 'mid':
                 temp = col.mid()
             else:
-                temp = col.div()
+                temp = col.div()'''
+            temp = todo(col) 
             if isinstance(temp, float):
                 temp = round(temp, places)
             t[col.name] = temp
