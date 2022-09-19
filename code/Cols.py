@@ -20,7 +20,7 @@ class Cols:
                 self.all.append(Num.num(c, s))
             else:
                 self.all.append(Sym.sym(c, s))
-            col = self.all[-1]
+            col = self.all
             
             # some cols are goal cols
             if s.find(":") == -1:
