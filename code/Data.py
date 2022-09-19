@@ -2,6 +2,10 @@ from Cols import Cols
 from Row import Row
 from Utils import parse_csv
 
+from code import Cols
+from code import Row
+from code import Utils
+
 class Data:
     def __init__(self, src, nums, separator):
         self.cols = None
@@ -11,19 +15,19 @@ class Data:
             nonlocal self
             self.add(row)
         if isinstance(src, str):
-            parse_csv(src, func, separator)
+            Utils.parse_csv(src, func, separator)
         else:
             for row in (src or []):
                 self.add(row)
     
     def add(self, xs):
         if not self.cols:
-            self.cols = Cols(xs)
+            self.cols = Cols.Cols(xs)
         else:
             if hasattr(xs,'cells'):
                 self.rows.append(xs)
             else:
-                self.rows.append(Row(xs))
+                self.rows.append(Row.Row(xs))
             row = self.rows[-1]
             for todo in (self.cols.x, self.cols.y):
                 for col in todo:
