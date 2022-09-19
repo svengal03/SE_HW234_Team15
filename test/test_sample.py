@@ -60,6 +60,7 @@ def test_csv():
     global n 
     n=0
     def function_row(r):
+        global n 
         n+=1
         return n if n>10 else Utils.oo(r)
     csv("../data/auto93.csv", function_row)
