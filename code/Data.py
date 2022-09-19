@@ -7,7 +7,7 @@ from code import Row
 from code import Utils
 
 class Data:
-    def __init__(self, src, nums, separator):
+    def __init__(self, src, nums=[], separator=','):
         self.cols = None
         self.rows = []
         self.n = nums
