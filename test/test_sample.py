@@ -1,10 +1,10 @@
 import pytest
-from code.Num import Num
-from Num import Num
-from Sym import Sym
-from Utils import Utils
-from Data import Data
-# from Utils import oo,parse_csv
+from code.Num import *
+#from Num import Num
+from code.Sym import *
+from code.Utils import *
+from code.Data import *
+from code.Utils import *
 import re
 import sys
 import random
