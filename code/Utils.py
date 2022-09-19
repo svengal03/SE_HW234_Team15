@@ -45,7 +45,7 @@ def coerce(s):
                 return False
             return re.match("\s*(.*)\s*", s).string
 
-def parse_csv(src, func, separator):
+def parse_csv(src, func=None, separator):
     lines = src.split('\n')
     for line in lines:
         temp = []
