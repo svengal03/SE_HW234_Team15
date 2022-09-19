@@ -29,6 +29,8 @@ def oo(t):
 def msg(status):
     return "PASS" if status else "FAIL"
 
+
+        
 def coerce(s):
     s = s.strip()
     if s.isnumeric():
