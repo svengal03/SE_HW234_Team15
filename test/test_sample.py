@@ -1,10 +1,9 @@
 import pytest
-from code.Num import *
+from code import Num
 #from Num import Num
-from code.Sym import *
-from code.Utils import *
-from code.Data import *
-from code.Utils import *
+from code import Sym
+from code import Utils
+from code import Data
 import re
 import sys
 import random
@@ -50,7 +49,7 @@ def test_data():
     return True
 
 def test_stats():
-    data = Data("../data/auto93.csv")
+    data = Data.Data("../data/auto93.csv")
     print('xmid=', data.stats(2, data.cols.x, "mid"))
     print('xdiv=', data.stats(3, data.cols.x, "div"))
     print('ymid=', data.stats(2, data.cols.y, "mid"))
