@@ -43,13 +43,13 @@ def test_bignum():
 
 
 def test_data():
-    d = ("../data/auto93.csv")
+    d = Data.Data("../data/data.csv")
     for _,y in d.cols.y:
         Utils.oo(y)
     return True
 
 def test_stats():
-    data = Data.Data("../data/auto93.csv")
+    data = Data.Data("../data/data.csv")
     print('xmid=', data.stats(2, data.cols.x, "mid"))
     print('xdiv=', data.stats(3, data.cols.x, "div"))
     print('ymid=', data.stats(2, data.cols.y, "mid"))
@@ -64,7 +64,7 @@ def test_csv():
         global n 
         n+=1
         return n if n>10 else Utils.oo(r)
-    Utils.csv("../data/auto93.csv", function_row)
+    Utils.csv("../data/data.csv", function_row)
     return True
 
 def ALL():
