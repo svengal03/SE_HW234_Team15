@@ -72,7 +72,8 @@ def parse_csv(fname, fun=None, sep=','):
         lines_csv = src.readlines()
         for line in lines_csv:
             row = line.split(sep)
-            fun(row)
+            if fun:
+                fun(row)
         
 
 def create_the():
