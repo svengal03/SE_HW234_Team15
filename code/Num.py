@@ -2,6 +2,7 @@ import math
 import random
 from code import Utils
 
+
 class Num:
     def __init__(self, c=0, s=""):
         self.n = 0  # items seen
