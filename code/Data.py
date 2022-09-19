@@ -26,9 +26,8 @@ class Data:
         else:
             row = xs if type(xs) == Row else Row.Row(xs)
             self.rows.append(row)
-            for todo in (self.cols.x, self.cols.y):
-                for col in todo:
-                    col.add(row.cells[col.at], self.n)
+            for col in self.cols.x + self.cols.y:
+                    col.add(row.cells[col.at])
 
     def stats(self, places=2, show_cols=None, todo=None):
         show_cols = show_cols or self.cols.y
