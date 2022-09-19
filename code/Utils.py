@@ -67,12 +67,12 @@ def coerce(s):
                 return False
             return re.match("\s*(.*)\s*", s).string
 
-def parse_csv(src, func=None, separator=','):
+def parse_csv(s, func=None, separator=','):
     lines = src.split('\n')
-    with open(fname, "r") as src:
+    with open(s, "r") as src:
         lines_csv = src.readlines()
         for line in lines_csv:
-            row = line.split(sep)
+            row = line.split(separator)
             fun(row)
         
 
