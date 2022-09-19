@@ -20,8 +20,8 @@ class Num:
         pos= None
         if v != "?":
             self.n += 1
-            self.lo = min(self.lo, v)
-            self.hi = max(self.hi, v)
+            self.lo = min(self.lo,  int(v))
+            self.hi = max(self.hi,  int(v))
             if len(self._has) < Utils.the['nums']:
                 pos = 1 + len(self._has)
             elif random.random() < Utils.the['nums'] / self.n:
