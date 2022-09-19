@@ -49,7 +49,7 @@ def test_data():
     return True
 
 def test_stats():
-    data = Data.Data("../data/data.csv")
+    data = Data.Data("../data/data.csv",,Utils.the['nums'],',')
     print('xmid=', data.stats(2, data.cols.x, "mid"))
     print('xdiv=', data.stats(3, data.cols.x, "div"))
     print('ymid=', data.stats(2, data.cols.y, "mid"))
