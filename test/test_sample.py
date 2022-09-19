@@ -1,4 +1,5 @@
 import pytest
+from code.Num import Num
 from Num import Num
 from Sym import Sym
 from Utils import Utils
