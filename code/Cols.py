@@ -16,11 +16,8 @@ class Cols:
         for c in range(0, len(names)):
             s =  re.sub('\n', '' , names[c]) 
             # Numerics start with Uppercase. 
-            if re.search(r'^[A-Z]*', s):
-                self.all.append(Num.Num(c, s))
-            else:
-                self.all.append(Sym.Sym(c, s))
-            col = self.all
+            col = Num.Num(i, s) if re.search(r'^[A-Z]*', s) else Sym.Sym(i, s)
+            self.all.append(col)
             
             # some cols are goal cols
             if not s.endswith(':'):
@@ -29,5 +26,5 @@ class Cols:
                 else:
                     self.x.append(col)
                 
-                if '!$' in s:
+                if "!$" in s:
                     self.klass = col
