@@ -57,9 +57,9 @@ def test_stats():
         return col.mid()
         
     print('xmid=', Utils.o(data.stats(2, data.cols.x, mid)))
-    print('xdiv=', Utils.o(data.stats(3, data.cols.x, "div")))
-    print('ymid=', Utils.o(data.stats(2, data.cols.y, "mid")))
-    print('ymid=', Utils.o(data.stats(3, data.cols.y, "div")))
+    print('xdiv=', Utils.o(data.stats(3, data.cols.x, div)))
+    print('ymid=', Utils.o(data.stats(2, data.cols.y, mid)))
+    print('ymid=', Utils.o(data.stats(3, data.cols.y, div)))
     return True
 
 def test_csv():
