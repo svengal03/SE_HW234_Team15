@@ -5,6 +5,7 @@ from code import Num
 # Create
 # Columns are created once, then may appear in  multiple slots.
 
+
 class Cols:
     def __init__(self, names):
         self.names=names  # all column names
