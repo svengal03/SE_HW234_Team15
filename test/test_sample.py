@@ -43,7 +43,7 @@ def test_bignum():
 
 
 def test_data():
-    d = Data.Data("../data/data.csv")
+    d = Data.Data("../data/data.csv",Utils.the['nums'],',')
     for _,y in d.cols.y:
         Utils.oo(y)
     return True
