@@ -6,5 +6,4 @@ class Row:
     self.cooked = Utils.copy(t)
     self.isEvaled = False
     self.outerSpace= data
-
-    return self.cells, self.cooked, self.isEvaled, self.outerSpace
+    #return self.cells, self.cooked, self.isEvaled, self.outerSpace
