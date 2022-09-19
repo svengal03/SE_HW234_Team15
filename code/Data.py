@@ -40,3 +40,5 @@ class Data:
                 temp = round(temp, places)
             t[col.name] = temp
         return t
+
+    
