@@ -63,6 +63,13 @@ def create_the():
 
 the = create_the()
 
+def csv(fname, fun, sep=','):
+    with open(fname, "r") as src:
+        lines_csv = src.readlines()
+        for line in lines_csv:
+            row = line.split(sep)
+            fun(row)
+            
 def copy(t):
     if type(t) != dict:
         return t
