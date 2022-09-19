@@ -28,7 +28,7 @@ class Num:
                 pos = random.randint(1, len(self._has))
             if pos:
                 self.isSorted = False
-                self._has[pos] = int(v)
+                self._has[pos] = float(v)
 
     def div(self):
         a = self.nums()
