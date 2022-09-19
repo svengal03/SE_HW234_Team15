@@ -23,8 +23,30 @@ def per(t, p = 0.5):
     return t[max(1, min(len(t), p))]
 
 def oo(t):
-    print(str(t))
-    return t
+    if type(t) == list:
+        t = list(map(lambda x: str(x), t))
+        out_string = "{" + " ".join(t)[:-1] + "}"
+        print(out_string)
+        return out_string
+    elif type(t) == dict:
+        out_string = o(t)
+        print(out_string)
+        return out_string
+    else:
+        obj_dict = vars(t)
+        del obj_dict['_has']
+        out_string = (o(vars(t)))
+        print(out_string)
+        return out_string
+
+def o(t):
+    out_string = "{"
+    for k,v in t.items():
+        out_string += ":" + str(k) + " " + str(v) + " "
+    out_string = out_string.strip()
+    out_string += "}"
+    return out_string
+
 
 def msg(status):
     return "PASS" if status else "FAIL"
