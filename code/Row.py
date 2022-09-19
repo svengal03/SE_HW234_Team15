@@ -1,9 +1,9 @@
-from code.Utils import copy
+from code import Utils
 
 class Row:
   def __init__(self, t, data):
     self.cells = t
-    self.cooked = copy(t)
+    self.cooked = Utils.copy(t)
     self.isEvaled = False
     self.outerSpace= data
 
