@@ -12,14 +12,13 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/svengal03/SE_HW234_Team15)
 ![GitHub issues](https://img.shields.io/github/issues/svengal03/SE_HW234_Team15)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/svengal03/SE_HW234_Team15)
-<!-- ![Lines of code](https://img.shields.io/tokei/lines/github/irkingmaker/se_project)
-![GitHub issues](https://img.shields.io/github/issues/irkingmaker/se_project)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/irkingmaker/se_project) -->
+
+## Overview ##
 
 
 ## General Info ##
-Homework : 2,3,4  
-Python code for Lua code.
+This repo provides a detailed overview of converting the LUA code to python
+The source code for LUA: https://github.com/txt/se22/blob/main/etc/pdf/csv.pdf
 
 ## Technologies ##
 Python 3.8.0
@@ -47,6 +46,7 @@ test/
   README.md
   __init__.py
   test_sample.py
+  test_engine.py
 .gitignore
 .travis.yml
 CITATION.md 
