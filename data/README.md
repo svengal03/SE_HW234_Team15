@@ -1,2 +1,2 @@
 
-data.txt file contains the square of 2
+data.csv file consists the data for which we need to generate the summaries of columns.
