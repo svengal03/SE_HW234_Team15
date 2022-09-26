@@ -8,6 +8,7 @@
 [![GitHub Release](https://img.shields.io/github/release/svengal03/SE_HW2)](https://github.com/svengal03/SE_HW2/releases)
 ![Python](https://img.shields.io/badge/python-v3.8+-yellow.svg)
 [![codecov](https://codecov.io/gh/svengal03/SE_HW234_Team15/branch/main/graph/badge.svg?token=UGOOCIUILJ)](https://codecov.io/gh/svengal03/SE_HW234_Team15)
+![Repo Size](https://img.shields.io/github/repo-size/svengal03/SE_HW234_Team15?color=brightgreen)
 ![Lines of code](https://img.shields.io/tokei/lines/github/svengal03/SE_HW234_Team15)
 ![GitHub issues](https://img.shields.io/github/issues/svengal03/SE_HW234_Team15)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/svengal03/SE_HW234_Team15)
