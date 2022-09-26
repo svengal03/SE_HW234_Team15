@@ -14,17 +14,22 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/svengal03/SE_HW234_Team15)
 
 ## Overview ##
-
+Lua is an efficient and embeddable scripting language. It supports the following:  
+1. Procedural programming
+2. Object-oriented programming
+3. Functional programming
+4. Data-driven programming
+5. Data description.
 
 ## General Info ##
-This repo provides a detailed overview of converting the LUA code to python
+This repo provides a detailed overview of converting the LUA code to python.  
 The source code for LUA: https://github.com/txt/se22/blob/main/etc/pdf/csv.pdf
 
 ## Technologies ##
 Python 3.8.0
 
 #### Prerequisites ####
-This Homework requires python setup. 
+This requires python setup. 
 
 ## Structure ##
 
