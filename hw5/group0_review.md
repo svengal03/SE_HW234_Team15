@@ -28,7 +28,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 |Use of code coverage | 3 | Badge present |
 |Other automated analysis tools| 3 ||
 |Test cases exist| 3 | Tests present |
-|Test cases are routinely executed| 2 | in GH|
+|Test cases are routinely executed| 3 | in GH|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | in GH |
 |Issues are discussed before they are closed| ||
 |Chat channel: exists| |Link or screenshots|
@@ -36,5 +36,5 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files| | |
 |Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| | |
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)| | |
-|Evidence that the members of the team are working across multiple places in the code base| 2 | |
+|Evidence that the members of the team are working across multiple places in the code base| 3 | |
 |Short release cycles |  | |
