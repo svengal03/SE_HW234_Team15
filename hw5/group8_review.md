@@ -14,7 +14,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 |Number of commits| 3 |in GH|
 |Number of commits: by different people| 3 |in GH|
 |Issues reports: there are **many**|
-|Issues are being closed| 1 |evidence in GH|
+|Issues are being closed| 2 |evidence in GH|
 |DOI badge: exists| 3 |in GH|
 |Docs: doco generated, format not ugly |  |in GH|
 |Docs: what: point descriptions of each class/function (in isolation) |  | 
