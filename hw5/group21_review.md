@@ -14,7 +14,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 |Number of commits| 3 |in GH|
 |Number of commits: by different people| 3 |in GH|
 |Issues reports: there are **many**|
-|Issues are being closed| 1 |evidence in GH|
+|Issues are being closed| 2 |evidence in GH|
 |DOI badge: exists| 3 |in GH|
 |Docs: doco generated, format not ugly | 3 |in GH|
 |Docs: what: point descriptions of each class/function (in isolation) |  | 
@@ -27,8 +27,8 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 3
 |Use of syntax checkers. |  | in github workflows |
 |Use of code coverage | 2 | Badge shows unknown|
 |Other automated analysis tools| |config files in GH|
-|Test cases exist| 2 ||
-|Test cases are routinely executed| 2 ||
+|Test cases exist| 3 ||
+|Test cases are routinely executed| 3 ||
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| | |
 |Issues are discussed before they are closed| ||
 |Chat channel: exists| ||
