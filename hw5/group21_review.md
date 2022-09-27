@@ -2,7 +2,7 @@
 
 Repo: https://github.com/landog893/CSC-510-Group-21-HW-1
 
-Total : 27
+Total : 30
 
 
 |Notes|assessment|evidence|
