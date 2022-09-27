@@ -14,7 +14,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 2
 |Number of commits| 3 |in GH|
 |Number of commits: by different people| 3 |in GH|
 |Issues reports: there are **many**|
-|Issues are being closed| 1 |evidence in GH|
+|Issues are being closed| 2 |evidence in GH|
 |DOI badge: exists| 3 |in GH|
 |Docs: doco generated, format not ugly |  |in GH|
 |Docs: what: point descriptions of each class/function (in isolation) |  | 
@@ -25,7 +25,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 2
 |Use of style checkers | |config files in GH showing your config|
 |Use of code formatters. | 3 |config files in GH showing your this formatter's  config|
 |Use of syntax checkers. | 3 |config files iin  GH showing this checker's config  |
-|Use of code coverage | 0 | config files in GH|
+|Use of code coverage | 1 | config files in GH|
 |Other automated analysis tools| |config files in GH|
 |Test cases exist| 2 |dozens of tests and those test cases are more than 30% of the code base|
 |Test cases are routinely executed| 2 |E.g. travis-com.com or github actions or something|
