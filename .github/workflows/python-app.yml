@@ -47,4 +47,4 @@ jobs:
     - name: Generating Documentation
       run: |
         pip install pdoc
-        python3 -m pdoc ./code/* -o ./data
+        python3 -m pdoc ./code/Sym.py -o ./data
