@@ -47,4 +47,4 @@ jobs:
     - name: Generating Documentation
       run: |
         pip install pdoc
-        python3 -m pdoc ./code/* -o.
+        python3 -m pdoc ./code/* -o ./data
