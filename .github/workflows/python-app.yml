@@ -47,5 +47,4 @@ jobs:
     - name: Generating Documentation
       run: |
         pip install pdoc
-        cd hw5
-        python3 -m pdoc ../code/* -o /docs
+        python3 -m pdoc ../code/* -o.
