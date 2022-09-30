@@ -48,4 +48,4 @@ jobs:
       run: |
         pip install pdoc
         cd hw5
-        python3 -m pdoc ./code/* -o.
+        python3 -m pdoc ../code/* -o /docs
