@@ -44,7 +44,3 @@ jobs:
         coverage run -m pytest
     - name: Upload Coverage to Codecov
       uses: codecov/codecov-action@v2
-    - name: Generating Documentation
-      run: |
-        pip install pdoc
-        python3 -m pdoc ./code/* -o ./data
